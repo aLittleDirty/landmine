@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS扫雷</title>
+    <link type="text/css" rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="wholeBox" id="whole">
+    <table id="mineLand"></table>
+    <div id="introduction">
+        <div id="restMine">剩余雷数：<span class="light" id="mineNum">0</span>个</div>
+        <div id="allTime">持续时间：<span class="light" id="time">0</span>秒</div>
+        <fieldset id="chooseLevel">
+            <legend>难度选择：</legend>
+            <input name="level" type="radio" id="llevel"><label>初级（10*10）</label><br/>
+            <input name="level" type="radio" id="mlevel"><label>中级（15*15）</label><br/>
+            <input name="level" type="radio" id="hlevel"><label>高级（20*20）</label><br/>
+        </fieldset>
+        <button id="btn">开始游戏</button>
+        <div>
+            提示：
+            <ol>
+                <li>点击“开始游戏”，游戏开始计时</li>
+                <li>游戏过程中点击“开始游戏”将开始新游戏</li>
+            </ol>
+        </div>
+    </div>
+</div>
+<script src="jms.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
